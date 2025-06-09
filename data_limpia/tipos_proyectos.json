@@ -1,0 +1,11 @@
+{
+"tipos_proyectos": [
+	{
+		"id" : 1,
+		"nombre_tipo" : "Solar"
+	},
+	{
+		"id" : 2,
+		"nombre_tipo" : "Eólico"
+	}
+]}

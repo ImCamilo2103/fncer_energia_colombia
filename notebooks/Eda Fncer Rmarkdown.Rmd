@@ -1,0 +1,101 @@
+---
+title: "Análisis Exploratorio de FNCER en R"
+author: "Camilo Garzon Moreno"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(DBI)
+library(dplyr)
+library(ggplot2)
+library(scales)
+```
+
+## Conexión a PostgreSQL
+
+```{r}
+con <- dbConnect(RPostgreSQL::PostgreSQL(),
+                 dbname ="proyectos",
+                 host = "localhost",
+                 port = 5432,
+                 user = "postgres",
+                 password = "Mom1012%")
+```
+
+## Capacidad Instalada Total y Promedio
+
+```{r}
+df <- tbl(con, "proyectos") %>% collect()
+
+# KPIs
+total <- sum(df$capacidad)
+promedio <- mean(df$capacidad)
+
+cat(sprintf("Total: 🔋 %.2f MW\nPromedio: 📊 %.2f MW", total, promedio))
+```
+
+## Distribución por Tipo de Proyecto (FNCER)
+
+```{r}
+df_tipo <- tbl(con, sql(""
+  SELECT p.capacidad, tp.nombre_tipo
+  FROM proyectos p
+  JOIN tipos_proyectos tp ON p.id_tipo = tp.id
+"")) %>% collect()
+
+contribucion <- df_tipo %>%
+  group_by(nombre_tipo) %>%
+  summarise(total = sum(capacidad)) %>%
+  mutate(porcentaje = total / sum(total) * 100)
+
+# Gráfico
+ggplot(contribucion, aes(x = "", y = porcentaje, fill = nombre_tipo)) +
+  geom_bar(stat = "identity") +
+  coord_polar("y") +
+  theme_void() +
+  labs(title = "Distribución por Tipo de FNCER", fill = "Tipo de Proyecto")
+```
+
+## Relación entre Capacidad e Inversión
+
+```{r}
+df_inv <- tbl(con, "proyectos") %>%
+  select(capacidad, inversion_estimada_cop) %>% collect()
+
+correlacion <- cor(df_inv$capacidad, df_inv$inversion_estimada_cop)
+cat(sprintf("Correlación: %.2f", correlacion))
+
+# Visualización
+ggplot(df_inv, aes(x = capacidad, y = inversion_estimada_cop)) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  scale_y_continuous(labels = label_number(scale = 1e-6, suffix = "M", prefix = "$")) +
+  labs(title = "Relación Capacidad-Inversión", x = "Capacidad (MW)", y = "Inversión Estimada (COP)")
+```
+
+## Usuarios Beneficiados por Departamento
+
+```{r}
+df_ben <- tbl(con, sql(""
+  SELECT d.departamento, SUM(p.usuarios) as usuarios
+  FROM proyectos p
+  JOIN proyectos_municipios pm ON p.id = pm.id_proyecto
+  JOIN municipios m ON pm.id_municipio = m.id
+  JOIN departamentos d ON m.id_departamento = d.id
+  GROUP BY d.departamento
+"")) %>% collect()
+
+# Gráfico de barras
+
+ggplot(df_ben, aes(x = reorder(departamento, usuarios), y = usuarios)) +
+  geom_col(fill = "steelblue") +
+  coord_flip() +
+  labs(title = "Beneficiarios por Departamento", x = "Departamento", y = "Usuarios")
+```
+
+## Cierre de conexión
+
+```{r}
+dbDisconnect(con)

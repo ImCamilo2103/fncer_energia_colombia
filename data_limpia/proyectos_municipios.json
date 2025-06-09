@@ -1,0 +1,627 @@
+{
+"proyectos_municipios": [
+	{
+		"id_proyecto" : 104,
+		"id_municipio" : 38
+	},
+	{
+		"id_proyecto" : 105,
+		"id_municipio" : 72
+	},
+	{
+		"id_proyecto" : 106,
+		"id_municipio" : 45
+	},
+	{
+		"id_proyecto" : 107,
+		"id_municipio" : 16
+	},
+	{
+		"id_proyecto" : 108,
+		"id_municipio" : 69
+	},
+	{
+		"id_proyecto" : 109,
+		"id_municipio" : 80
+	},
+	{
+		"id_proyecto" : 110,
+		"id_municipio" : 75
+	},
+	{
+		"id_proyecto" : 111,
+		"id_municipio" : 11
+	},
+	{
+		"id_proyecto" : 112,
+		"id_municipio" : 37
+	},
+	{
+		"id_proyecto" : 113,
+		"id_municipio" : 49
+	},
+	{
+		"id_proyecto" : 114,
+		"id_municipio" : 35
+	},
+	{
+		"id_proyecto" : 115,
+		"id_municipio" : 35
+	},
+	{
+		"id_proyecto" : 116,
+		"id_municipio" : 12
+	},
+	{
+		"id_proyecto" : 117,
+		"id_municipio" : 48
+	},
+	{
+		"id_proyecto" : 118,
+		"id_municipio" : 18
+	},
+	{
+		"id_proyecto" : 119,
+		"id_municipio" : 72
+	},
+	{
+		"id_proyecto" : 120,
+		"id_municipio" : 73
+	},
+	{
+		"id_proyecto" : 121,
+		"id_municipio" : 73
+	},
+	{
+		"id_proyecto" : 122,
+		"id_municipio" : 73
+	},
+	{
+		"id_proyecto" : 123,
+		"id_municipio" : 73
+	},
+	{
+		"id_proyecto" : 124,
+		"id_municipio" : 73
+	},
+	{
+		"id_proyecto" : 125,
+		"id_municipio" : 73
+	},
+	{
+		"id_proyecto" : 126,
+		"id_municipio" : 73
+	},
+	{
+		"id_proyecto" : 127,
+		"id_municipio" : 64
+	},
+	{
+		"id_proyecto" : 128,
+		"id_municipio" : 50
+	},
+	{
+		"id_proyecto" : 129,
+		"id_municipio" : 48
+	},
+	{
+		"id_proyecto" : 130,
+		"id_municipio" : 48
+	},
+	{
+		"id_proyecto" : 131,
+		"id_municipio" : 21
+	},
+	{
+		"id_proyecto" : 132,
+		"id_municipio" : 21
+	},
+	{
+		"id_proyecto" : 133,
+		"id_municipio" : 10
+	},
+	{
+		"id_proyecto" : 134,
+		"id_municipio" : 12
+	},
+	{
+		"id_proyecto" : 135,
+		"id_municipio" : 35
+	},
+	{
+		"id_proyecto" : 136,
+		"id_municipio" : 18
+	},
+	{
+		"id_proyecto" : 137,
+		"id_municipio" : 72
+	},
+	{
+		"id_proyecto" : 138,
+		"id_municipio" : 28
+	},
+	{
+		"id_proyecto" : 139,
+		"id_municipio" : 5
+	},
+	{
+		"id_proyecto" : 140,
+		"id_municipio" : 73
+	},
+	{
+		"id_proyecto" : 141,
+		"id_municipio" : 41
+	},
+	{
+		"id_proyecto" : 142,
+		"id_municipio" : 61
+	},
+	{
+		"id_proyecto" : 143,
+		"id_municipio" : 67
+	},
+	{
+		"id_proyecto" : 144,
+		"id_municipio" : 26
+	},
+	{
+		"id_proyecto" : 145,
+		"id_municipio" : 35
+	},
+	{
+		"id_proyecto" : 146,
+		"id_municipio" : 80
+	},
+	{
+		"id_proyecto" : 147,
+		"id_municipio" : 46
+	},
+	{
+		"id_proyecto" : 148,
+		"id_municipio" : 20
+	},
+	{
+		"id_proyecto" : 149,
+		"id_municipio" : 65
+	},
+	{
+		"id_proyecto" : 150,
+		"id_municipio" : 4
+	},
+	{
+		"id_proyecto" : 151,
+		"id_municipio" : 40
+	},
+	{
+		"id_proyecto" : 152,
+		"id_municipio" : 53
+	},
+	{
+		"id_proyecto" : 153,
+		"id_municipio" : 69
+	},
+	{
+		"id_proyecto" : 154,
+		"id_municipio" : 27
+	},
+	{
+		"id_proyecto" : 155,
+		"id_municipio" : 4
+	},
+	{
+		"id_proyecto" : 156,
+		"id_municipio" : 46
+	},
+	{
+		"id_proyecto" : 157,
+		"id_municipio" : 32
+	},
+	{
+		"id_proyecto" : 158,
+		"id_municipio" : 63
+	},
+	{
+		"id_proyecto" : 159,
+		"id_municipio" : 41
+	},
+	{
+		"id_proyecto" : 160,
+		"id_municipio" : 18
+	},
+	{
+		"id_proyecto" : 161,
+		"id_municipio" : 38
+	},
+	{
+		"id_proyecto" : 162,
+		"id_municipio" : 16
+	},
+	{
+		"id_proyecto" : 163,
+		"id_municipio" : 42
+	},
+	{
+		"id_proyecto" : 164,
+		"id_municipio" : 15
+	},
+	{
+		"id_proyecto" : 165,
+		"id_municipio" : 48
+	},
+	{
+		"id_proyecto" : 166,
+		"id_municipio" : 48
+	},
+	{
+		"id_proyecto" : 167,
+		"id_municipio" : 29
+	},
+	{
+		"id_proyecto" : 168,
+		"id_municipio" : 76
+	},
+	{
+		"id_proyecto" : 169,
+		"id_municipio" : 76
+	},
+	{
+		"id_proyecto" : 170,
+		"id_municipio" : 22
+	},
+	{
+		"id_proyecto" : 171,
+		"id_municipio" : 6
+	},
+	{
+		"id_proyecto" : 172,
+		"id_municipio" : 6
+	},
+	{
+		"id_proyecto" : 173,
+		"id_municipio" : 76
+	},
+	{
+		"id_proyecto" : 174,
+		"id_municipio" : 61
+	},
+	{
+		"id_proyecto" : 175,
+		"id_municipio" : 43
+	},
+	{
+		"id_proyecto" : 176,
+		"id_municipio" : 64
+	},
+	{
+		"id_proyecto" : 177,
+		"id_municipio" : 14
+	},
+	{
+		"id_proyecto" : 178,
+		"id_municipio" : 20
+	},
+	{
+		"id_proyecto" : 179,
+		"id_municipio" : 20
+	},
+	{
+		"id_proyecto" : 180,
+		"id_municipio" : 20
+	},
+	{
+		"id_proyecto" : 181,
+		"id_municipio" : 62
+	},
+	{
+		"id_proyecto" : 182,
+		"id_municipio" : 66
+	},
+	{
+		"id_proyecto" : 183,
+		"id_municipio" : 55
+	},
+	{
+		"id_proyecto" : 184,
+		"id_municipio" : 42
+	},
+	{
+		"id_proyecto" : 185,
+		"id_municipio" : 6
+	},
+	{
+		"id_proyecto" : 186,
+		"id_municipio" : 38
+	},
+	{
+		"id_proyecto" : 187,
+		"id_municipio" : 51
+	},
+	{
+		"id_proyecto" : 188,
+		"id_municipio" : 8
+	},
+	{
+		"id_proyecto" : 189,
+		"id_municipio" : 52
+	},
+	{
+		"id_proyecto" : 190,
+		"id_municipio" : 1
+	},
+	{
+		"id_proyecto" : 191,
+		"id_municipio" : 48
+	},
+	{
+		"id_proyecto" : 192,
+		"id_municipio" : 71
+	},
+	{
+		"id_proyecto" : 193,
+		"id_municipio" : 71
+	},
+	{
+		"id_proyecto" : 194,
+		"id_municipio" : 70
+	},
+	{
+		"id_proyecto" : 195,
+		"id_municipio" : 31
+	},
+	{
+		"id_proyecto" : 196,
+		"id_municipio" : 6
+	},
+	{
+		"id_proyecto" : 197,
+		"id_municipio" : 7
+	},
+	{
+		"id_proyecto" : 198,
+		"id_municipio" : 27
+	},
+	{
+		"id_proyecto" : 199,
+		"id_municipio" : 51
+	},
+	{
+		"id_proyecto" : 200,
+		"id_municipio" : 30
+	},
+	{
+		"id_proyecto" : 201,
+		"id_municipio" : 25
+	},
+	{
+		"id_proyecto" : 202,
+		"id_municipio" : 17
+	},
+	{
+		"id_proyecto" : 203,
+		"id_municipio" : 17
+	},
+	{
+		"id_proyecto" : 204,
+		"id_municipio" : 17
+	},
+	{
+		"id_proyecto" : 205,
+		"id_municipio" : 40
+	},
+	{
+		"id_proyecto" : 206,
+		"id_municipio" : 17
+	},
+	{
+		"id_proyecto" : 207,
+		"id_municipio" : 40
+	},
+	{
+		"id_proyecto" : 208,
+		"id_municipio" : 24
+	},
+	{
+		"id_proyecto" : 209,
+		"id_municipio" : 48
+	},
+	{
+		"id_proyecto" : 210,
+		"id_municipio" : 9
+	},
+	{
+		"id_proyecto" : 211,
+		"id_municipio" : 34
+	},
+	{
+		"id_proyecto" : 212,
+		"id_municipio" : 23
+	},
+	{
+		"id_proyecto" : 213,
+		"id_municipio" : 74
+	},
+	{
+		"id_proyecto" : 214,
+		"id_municipio" : 33
+	},
+	{
+		"id_proyecto" : 215,
+		"id_municipio" : 78
+	},
+	{
+		"id_proyecto" : 216,
+		"id_municipio" : 3
+	},
+	{
+		"id_proyecto" : 217,
+		"id_municipio" : 54
+	},
+	{
+		"id_proyecto" : 218,
+		"id_municipio" : 46
+	},
+	{
+		"id_proyecto" : 219,
+		"id_municipio" : 46
+	},
+	{
+		"id_proyecto" : 220,
+		"id_municipio" : 36
+	},
+	{
+		"id_proyecto" : 221,
+		"id_municipio" : 60
+	},
+	{
+		"id_proyecto" : 222,
+		"id_municipio" : 80
+	},
+	{
+		"id_proyecto" : 223,
+		"id_municipio" : 32
+	},
+	{
+		"id_proyecto" : 224,
+		"id_municipio" : 7
+	},
+	{
+		"id_proyecto" : 225,
+		"id_municipio" : 2
+	},
+	{
+		"id_proyecto" : 226,
+		"id_municipio" : 71
+	},
+	{
+		"id_proyecto" : 227,
+		"id_municipio" : 44
+	},
+	{
+		"id_proyecto" : 228,
+		"id_municipio" : 38
+	},
+	{
+		"id_proyecto" : 229,
+		"id_municipio" : 38
+	},
+	{
+		"id_proyecto" : 230,
+		"id_municipio" : 47
+	},
+	{
+		"id_proyecto" : 231,
+		"id_municipio" : 67
+	},
+	{
+		"id_proyecto" : 232,
+		"id_municipio" : 19
+	},
+	{
+		"id_proyecto" : 233,
+		"id_municipio" : 13
+	},
+	{
+		"id_proyecto" : 234,
+		"id_municipio" : 57
+	},
+	{
+		"id_proyecto" : 235,
+		"id_municipio" : 23
+	},
+	{
+		"id_proyecto" : 236,
+		"id_municipio" : 68
+	},
+	{
+		"id_proyecto" : 237,
+		"id_municipio" : 7
+	},
+	{
+		"id_proyecto" : 238,
+		"id_municipio" : 59
+	},
+	{
+		"id_proyecto" : 239,
+		"id_municipio" : 23
+	},
+	{
+		"id_proyecto" : 240,
+		"id_municipio" : 56
+	},
+	{
+		"id_proyecto" : 241,
+		"id_municipio" : 15
+	},
+	{
+		"id_proyecto" : 242,
+		"id_municipio" : 49
+	},
+	{
+		"id_proyecto" : 243,
+		"id_municipio" : 38
+	},
+	{
+		"id_proyecto" : 244,
+		"id_municipio" : 34
+	},
+	{
+		"id_proyecto" : 245,
+		"id_municipio" : 71
+	},
+	{
+		"id_proyecto" : 246,
+		"id_municipio" : 38
+	},
+	{
+		"id_proyecto" : 247,
+		"id_municipio" : 38
+	},
+	{
+		"id_proyecto" : 248,
+		"id_municipio" : 81
+	},
+	{
+		"id_proyecto" : 249,
+		"id_municipio" : 39
+	},
+	{
+		"id_proyecto" : 250,
+		"id_municipio" : 46
+	},
+	{
+		"id_proyecto" : 251,
+		"id_municipio" : 23
+	},
+	{
+		"id_proyecto" : 252,
+		"id_municipio" : 79
+	},
+	{
+		"id_proyecto" : 253,
+		"id_municipio" : 58
+	},
+	{
+		"id_proyecto" : 254,
+		"id_municipio" : 68
+	},
+	{
+		"id_proyecto" : 255,
+		"id_municipio" : 77
+	},
+	{
+		"id_proyecto" : 256,
+		"id_municipio" : 77
+	},
+	{
+		"id_proyecto" : 257,
+		"id_municipio" : 28
+	},
+	{
+		"id_proyecto" : 258,
+		"id_municipio" : 42
+	},
+	{
+		"id_proyecto" : 259,
+		"id_municipio" : 61
+	}
+]}

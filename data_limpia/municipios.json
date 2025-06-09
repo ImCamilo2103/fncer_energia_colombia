@@ -1,0 +1,489 @@
+{
+"municipios": [
+	{
+		"id" : 1,
+		"municipio" : "CANTAGALLO",
+		"codigo_municipio" : 13160,
+		"id_departamento" : 8
+	},
+	{
+		"id" : 2,
+		"municipio" : "PIEDECUESTA",
+		"codigo_municipio" : 68547,
+		"id_departamento" : 18
+	},
+	{
+		"id" : 3,
+		"municipio" : "MADRID",
+		"codigo_municipio" : 25430,
+		"id_departamento" : 3
+	},
+	{
+		"id" : 4,
+		"municipio" : "BARRANQUILLA",
+		"codigo_municipio" : 8001,
+		"id_departamento" : 23
+	},
+	{
+		"id" : 5,
+		"municipio" : "MANIZALES",
+		"codigo_municipio" : 17001,
+		"id_departamento" : 5
+	},
+	{
+		"id" : 6,
+		"municipio" : "CHINÚ",
+		"codigo_municipio" : 23182,
+		"id_departamento" : 12
+	},
+	{
+		"id" : 7,
+		"municipio" : "MALAMBO",
+		"codigo_municipio" : 8433,
+		"id_departamento" : 23
+	},
+	{
+		"id" : 8,
+		"municipio" : "CIÉNAGA",
+		"codigo_municipio" : 47189,
+		"id_departamento" : 21
+	},
+	{
+		"id" : 9,
+		"municipio" : "LOS SANTOS",
+		"codigo_municipio" : 68418,
+		"id_departamento" : 18
+	},
+	{
+		"id" : 10,
+		"municipio" : "INÍRIDA",
+		"codigo_municipio" : 94001,
+		"id_departamento" : 16
+	},
+	{
+		"id" : 11,
+		"municipio" : "SOLEDAD",
+		"codigo_municipio" : 8758,
+		"id_departamento" : 23
+	},
+	{
+		"id" : 12,
+		"municipio" : "UNGUÍA",
+		"codigo_municipio" : 27800,
+		"id_departamento" : 25
+	},
+	{
+		"id" : 13,
+		"municipio" : "CHIRIGUANÁ",
+		"codigo_municipio" : 20178,
+		"id_departamento" : 13
+	},
+	{
+		"id" : 14,
+		"municipio" : "CARTAGO",
+		"codigo_municipio" : 76147,
+		"id_departamento" : 9
+	},
+	{
+		"id" : 15,
+		"municipio" : "LA DORADA",
+		"codigo_municipio" : 17380,
+		"id_departamento" : 5
+	},
+	{
+		"id" : 16,
+		"municipio" : "EL PASO",
+		"codigo_municipio" : 20250,
+		"id_departamento" : 13
+	},
+	{
+		"id" : 17,
+		"municipio" : "FLANDES",
+		"codigo_municipio" : 73275,
+		"id_departamento" : 6
+	},
+	{
+		"id" : 18,
+		"municipio" : "CARTAGENA DE INDIAS",
+		"codigo_municipio" : 13001,
+		"id_departamento" : 8
+	},
+	{
+		"id" : 19,
+		"municipio" : "LA ESPERANZA",
+		"codigo_municipio" : 54385,
+		"id_departamento" : 22
+	},
+	{
+		"id" : 20,
+		"municipio" : "SAN JOSÉ DE CÚCUTA",
+		"codigo_municipio" : 54001,
+		"id_departamento" : 22
+	},
+	{
+		"id" : 21,
+		"municipio" : "RIONEGRO",
+		"codigo_municipio" : 5615,
+		"id_departamento" : 26
+	},
+	{
+		"id" : 22,
+		"municipio" : "SAN SEBASTIÁN DE MARIQUITA",
+		"codigo_municipio" : 73443,
+		"id_departamento" : 6
+	},
+	{
+		"id" : 23,
+		"municipio" : "SABANALARGA",
+		"codigo_municipio" : 8638,
+		"id_departamento" : 23
+	},
+	{
+		"id" : 24,
+		"municipio" : "PUERTO TEJADA",
+		"codigo_municipio" : 19573,
+		"id_departamento" : 14
+	},
+	{
+		"id" : 25,
+		"municipio" : "SAN JOSÉ DE TOLUVIEJO",
+		"codigo_municipio" : 70823,
+		"id_departamento" : 24
+	},
+	{
+		"id" : 26,
+		"municipio" : "TUNJA",
+		"codigo_municipio" : 15001,
+		"id_departamento" : 2
+	},
+	{
+		"id" : 27,
+		"municipio" : "GALAPA",
+		"codigo_municipio" : 8296,
+		"id_departamento" : 23
+	},
+	{
+		"id" : 28,
+		"municipio" : "BARRANCABERMEJA",
+		"codigo_municipio" : 68081,
+		"id_departamento" : 18
+	},
+	{
+		"id" : 29,
+		"municipio" : "VILLANUEVA",
+		"codigo_municipio" : 85440,
+		"id_departamento" : 1
+	},
+	{
+		"id" : 30,
+		"municipio" : "MANATÍ",
+		"codigo_municipio" : 8436,
+		"id_departamento" : 23
+	},
+	{
+		"id" : 31,
+		"municipio" : "ANDALUCÍA",
+		"codigo_municipio" : 76036,
+		"id_departamento" : 9
+	},
+	{
+		"id" : 32,
+		"municipio" : "POPAYÁN",
+		"codigo_municipio" : 19001,
+		"id_departamento" : 14
+	},
+	{
+		"id" : 33,
+		"municipio" : "SUESCA",
+		"codigo_municipio" : 25772,
+		"id_departamento" : 3
+	},
+	{
+		"id" : 34,
+		"municipio" : "GUADUAS",
+		"codigo_municipio" : 25320,
+		"id_departamento" : 3
+	},
+	{
+		"id" : 35,
+		"municipio" : "MEDELLÍN",
+		"codigo_municipio" : 5001,
+		"id_departamento" : 26
+	},
+	{
+		"id" : 36,
+		"municipio" : "SESQUILÉ",
+		"codigo_municipio" : 25736,
+		"id_departamento" : 3
+	},
+	{
+		"id" : 37,
+		"municipio" : "ESPINAL",
+		"codigo_municipio" : 73268,
+		"id_departamento" : 6
+	},
+	{
+		"id" : 38,
+		"municipio" : "URIBIA",
+		"codigo_municipio" : 44847,
+		"id_departamento" : 10
+	},
+	{
+		"id" : 40,
+		"municipio" : "ZARZAL",
+		"codigo_municipio" : 76895,
+		"id_departamento" : 9
+	},
+	{
+		"id" : 41,
+		"municipio" : "NEIVA",
+		"codigo_municipio" : 41001,
+		"id_departamento" : 17
+	},
+	{
+		"id" : 42,
+		"municipio" : "VILLAVICENCIO",
+		"codigo_municipio" : 50001,
+		"id_departamento" : 20
+	},
+	{
+		"id" : 43,
+		"municipio" : "SAN LUIS DE SINCÉ",
+		"codigo_municipio" : 70742,
+		"id_departamento" : 24
+	},
+	{
+		"id" : 44,
+		"municipio" : "AGUACHICA",
+		"codigo_municipio" : 20011,
+		"id_departamento" : 13
+	},
+	{
+		"id" : 45,
+		"municipio" : "SANTA ROSA",
+		"codigo_municipio" : 13683,
+		"id_departamento" : 8
+	},
+	{
+		"id" : 46,
+		"municipio" : "BOGOTÁ D.C.",
+		"codigo_municipio" : 11001,
+		"id_departamento" : 4
+	},
+	{
+		"id" : 47,
+		"municipio" : "LA GLORIA",
+		"codigo_municipio" : 20383,
+		"id_departamento" : 13
+	},
+	{
+		"id" : 48,
+		"municipio" : "PUERTO GAITÁN",
+		"codigo_municipio" : 50568,
+		"id_departamento" : 20
+	},
+	{
+		"id" : 49,
+		"municipio" : "IBAGUÉ",
+		"codigo_municipio" : 73001,
+		"id_departamento" : 6
+	},
+	{
+		"id" : 50,
+		"municipio" : "CANDELARIA",
+		"codigo_municipio" : 76130,
+		"id_departamento" : 9
+	},
+	{
+		"id" : 51,
+		"municipio" : "ARJONA",
+		"codigo_municipio" : 13052,
+		"id_departamento" : 8
+	},
+	{
+		"id" : 52,
+		"municipio" : "YAGUARÁ",
+		"codigo_municipio" : 41885,
+		"id_departamento" : 17
+	},
+	{
+		"id" : 53,
+		"municipio" : "SAN BENITO ABAD",
+		"codigo_municipio" : 70678,
+		"id_departamento" : 24
+	},
+	{
+		"id" : 54,
+		"municipio" : "SOACHA",
+		"codigo_municipio" : 25754,
+		"id_departamento" : 3
+	},
+	{
+		"id" : 55,
+		"municipio" : "POLONUEVO",
+		"codigo_municipio" : 8558,
+		"id_departamento" : 23
+	},
+	{
+		"id" : 56,
+		"municipio" : "PUERTO NARE",
+		"codigo_municipio" : 5585,
+		"id_departamento" : 26
+	},
+	{
+		"id" : 57,
+		"municipio" : "CIMITARRA",
+		"codigo_municipio" : 68190,
+		"id_departamento" : 18
+	},
+	{
+		"id" : 58,
+		"municipio" : "TULUÁ",
+		"codigo_municipio" : 76834,
+		"id_departamento" : 9
+	},
+	{
+		"id" : 59,
+		"municipio" : "SANTA CATALINA",
+		"codigo_municipio" : 13673,
+		"id_departamento" : 8
+	},
+	{
+		"id" : 60,
+		"municipio" : "GINEBRA",
+		"codigo_municipio" : 76306,
+		"id_departamento" : 9
+	},
+	{
+		"id" : 61,
+		"municipio" : "ARAUCA",
+		"codigo_municipio" : 81001,
+		"id_departamento" : 15
+	},
+	{
+		"id" : 62,
+		"municipio" : "ZONA BANANERA",
+		"codigo_municipio" : 47980,
+		"id_departamento" : 21
+	},
+	{
+		"id" : 63,
+		"municipio" : "ARMENIA",
+		"codigo_municipio" : 63001,
+		"id_departamento" : 19
+	},
+	{
+		"id" : 64,
+		"municipio" : "PLANETA RICA",
+		"codigo_municipio" : 23555,
+		"id_departamento" : 12
+	},
+	{
+		"id" : 65,
+		"municipio" : "YOPAL",
+		"codigo_municipio" : 85001,
+		"id_departamento" : 1
+	},
+	{
+		"id" : 66,
+		"municipio" : "BARANOA",
+		"codigo_municipio" : 8078,
+		"id_departamento" : 23
+	},
+	{
+		"id" : 67,
+		"municipio" : "MONTERÍA",
+		"codigo_municipio" : 23001,
+		"id_departamento" : 12
+	},
+	{
+		"id" : 69,
+		"municipio" : "CASTILLA LA NUEVA",
+		"codigo_municipio" : 50150,
+		"id_departamento" : 20
+	},
+	{
+		"id" : 70,
+		"municipio" : "MELGAR",
+		"codigo_municipio" : 73449,
+		"id_departamento" : 6
+	},
+	{
+		"id" : 71,
+		"municipio" : "MAICAO",
+		"codigo_municipio" : 44430,
+		"id_departamento" : 10
+	},
+	{
+		"id" : 72,
+		"municipio" : "YUMBO",
+		"codigo_municipio" : 76892,
+		"id_departamento" : 9
+	},
+	{
+		"id" : 73,
+		"municipio" : "PEREIRA",
+		"codigo_municipio" : 66001,
+		"id_departamento" : 7
+	},
+	{
+		"id" : 74,
+		"municipio" : "GIRARDOTA",
+		"codigo_municipio" : 5308,
+		"id_departamento" : 26
+	},
+	{
+		"id" : 75,
+		"municipio" : "SAN ANDRÉS",
+		"codigo_municipio" : 88001,
+		"id_departamento" : 11
+	},
+	{
+		"id" : 76,
+		"municipio" : "ARMERO",
+		"codigo_municipio" : 73055,
+		"id_departamento" : 6
+	},
+	{
+		"id" : 78,
+		"municipio" : "SOPÓ",
+		"codigo_municipio" : 25758,
+		"id_departamento" : 3
+	},
+	{
+		"id" : 79,
+		"municipio" : "FUNDACIÓN",
+		"codigo_municipio" : 47288,
+		"id_departamento" : 21
+	},
+	{
+		"id" : 80,
+		"municipio" : "CALI",
+		"codigo_municipio" : 76001,
+		"id_departamento" : 9
+	},
+	{
+		"id" : 81,
+		"municipio" : "ALVARADO",
+		"codigo_municipio" : 73026,
+		"id_departamento" : 6
+	},
+	{
+		"id" : 39,
+		"municipio" : "CUCUTA",
+		"codigo_municipio" : 54,
+		"id_departamento" : 22
+	},
+	{
+		"id" : 68,
+		"municipio" : "MONTERIA",
+		"codigo_municipio" : 23,
+		"id_departamento" : 12
+	},
+	{
+		"id" : 77,
+		"municipio" : "CALI",
+		"codigo_municipio" : 76,
+		"id_departamento" : 9
+	}
+]}

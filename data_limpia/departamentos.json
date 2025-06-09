@@ -1,0 +1,133 @@
+{
+"departamentos": [
+	{
+		"id" : 1,
+		"departamento" : "CASANARE",
+		"codigo_departamento" : 85
+	},
+	{
+		"id" : 2,
+		"departamento" : "BOYACÁ",
+		"codigo_departamento" : 15
+	},
+	{
+		"id" : 3,
+		"departamento" : "CUNDINAMARCA",
+		"codigo_departamento" : 25
+	},
+	{
+		"id" : 4,
+		"departamento" : "BOGOTÁ D.C.",
+		"codigo_departamento" : 11
+	},
+	{
+		"id" : 5,
+		"departamento" : "CALDAS",
+		"codigo_departamento" : 17
+	},
+	{
+		"id" : 6,
+		"departamento" : "TOLIMA",
+		"codigo_departamento" : 73
+	},
+	{
+		"id" : 7,
+		"departamento" : "RISARALDA",
+		"codigo_departamento" : 66
+	},
+	{
+		"id" : 8,
+		"departamento" : "BOLÍVAR",
+		"codigo_departamento" : 13
+	},
+	{
+		"id" : 9,
+		"departamento" : "VALLE DEL CAUCA",
+		"codigo_departamento" : 76
+	},
+	{
+		"id" : 10,
+		"departamento" : "LA GUAJIRA",
+		"codigo_departamento" : 44
+	},
+	{
+		"id" : 11,
+		"departamento" : "ARCHIPIÉLAGO DE SAN ANDRÉS, PROVIDENCIA Y SANTA CATALINA",
+		"codigo_departamento" : 88
+	},
+	{
+		"id" : 12,
+		"departamento" : "CÓRDOBA",
+		"codigo_departamento" : 23
+	},
+	{
+		"id" : 13,
+		"departamento" : "CESAR",
+		"codigo_departamento" : 20
+	},
+	{
+		"id" : 14,
+		"departamento" : "CAUCA",
+		"codigo_departamento" : 19
+	},
+	{
+		"id" : 15,
+		"departamento" : "ARAUCA",
+		"codigo_departamento" : 81
+	},
+	{
+		"id" : 16,
+		"departamento" : "GUAINÍA",
+		"codigo_departamento" : 94
+	},
+	{
+		"id" : 17,
+		"departamento" : "HUILA",
+		"codigo_departamento" : 41
+	},
+	{
+		"id" : 18,
+		"departamento" : "SANTANDER",
+		"codigo_departamento" : 68
+	},
+	{
+		"id" : 19,
+		"departamento" : "QUINDÍO",
+		"codigo_departamento" : 63
+	},
+	{
+		"id" : 20,
+		"departamento" : "META",
+		"codigo_departamento" : 50
+	},
+	{
+		"id" : 21,
+		"departamento" : "MAGDALENA",
+		"codigo_departamento" : 47
+	},
+	{
+		"id" : 22,
+		"departamento" : "NORTE DE SANTANDER",
+		"codigo_departamento" : 54
+	},
+	{
+		"id" : 23,
+		"departamento" : "ATLÁNTICO",
+		"codigo_departamento" : 8
+	},
+	{
+		"id" : 24,
+		"departamento" : "SUCRE",
+		"codigo_departamento" : 70
+	},
+	{
+		"id" : 25,
+		"departamento" : "CHOCÓ",
+		"codigo_departamento" : 27
+	},
+	{
+		"id" : 26,
+		"departamento" : "ANTIOQUIA",
+		"codigo_departamento" : 5
+	}
+]}

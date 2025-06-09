@@ -1,0 +1,1920 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0520.1026                               -->
+<workbook locale='es_CO' original-version='18.1' source-build='2025.1.2 (20251.25.0520.1026)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SpatialFileLayer />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='meta_fncer-1749254106119.csv+ (Varias conexiones)' inline='true' name='federated.1t7d4ix16ergbs1d1pi8l0kz1n44' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='meta_fncer-1749254106119' name='textscan.1qlurq21pd2t661dliq0a0uhmrrg'>
+            <connection class='textscan' directory='C:/Users/Asus/Documents/data analysis/Portafolio/fncer_energia_colombia/data_limpia' filename='meta_fncer-1749254106119.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='Colombia' name='ogrdirect.08fk6qy1d5t69v1f28tdf0m2lanq'>
+            <connection class='ogrdirect' directory='C:/Users/Asus/Documents/data analysis/Portafolio/fncer_energia_colombia/documentos' filename='Colombia.geojson' password='' server='' tablename='' />
+          </named-connection>
+        </named-connections>
+        <relation join='left' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[meta_fncer-1749254106119.csv].[departamento]' />
+              <expression op='[Colombia.geojson].[shapeName]' />
+            </expression>
+          </clause>
+          <relation connection='textscan.1qlurq21pd2t661dliq0a0uhmrrg' name='meta_fncer-1749254106119.csv' table='[meta_fncer-1749254106119#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='es_CO'>
+              <column datatype='integer' name='proyecto_id' ordinal='0' />
+              <column datatype='string' name='proyecto' ordinal='1' />
+              <column datatype='string' name='capacidad' ordinal='2' />
+              <column datatype='date' name='fecha_estimada_fpo' ordinal='3' />
+              <column datatype='string' name='energia_kwhdia' ordinal='4' />
+              <column datatype='integer' name='usuarios' ordinal='5' />
+              <column datatype='integer' name='inversion_estimada_cop' ordinal='6' />
+              <column datatype='integer' name='empleos_estimados' ordinal='7' />
+              <column datatype='string' name='emisiones_co2_tonano' ordinal='8' />
+              <column datatype='string' name='tipo_proyecto' ordinal='9' />
+              <column datatype='string' name='municipio' ordinal='10' />
+              <column datatype='integer' name='codigo_municipio' ordinal='11' />
+              <column datatype='string' name='departamento' ordinal='12' />
+              <column datatype='integer' name='codigo_departamento' ordinal='13' />
+            </columns>
+          </relation>
+          <relation connection='ogrdirect.08fk6qy1d5t69v1f28tdf0m2lanq' name='Colombia.geojson' table='[Colombia.geojson]' type='table'>
+            <columns>
+              <column datatype='string' name='shapeName' ordinal='0' />
+              <column datatype='string' name='shapeISO' ordinal='1' />
+              <column datatype='string' name='shapeID' ordinal='2' />
+              <column datatype='string' name='shapeGroup' ordinal='3' />
+              <column datatype='string' name='shapeType' ordinal='4' />
+              <column datatype='spatial' name='Geometry' ordinal='5' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[meta_fncer-1749254106119.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_CO&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>proyecto_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[proyecto_id]</local-name>
+            <parent-name>[meta_fncer-1749254106119.csv]</parent-name>
+            <remote-alias>proyecto_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>proyecto</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[proyecto]</local-name>
+            <parent-name>[meta_fncer-1749254106119.csv]</parent-name>
+            <remote-alias>proyecto</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>capacidad</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[capacidad]</local-name>
+            <parent-name>[meta_fncer-1749254106119.csv]</parent-name>
+            <remote-alias>capacidad</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fecha_estimada_fpo</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[fecha_estimada_fpo]</local-name>
+            <parent-name>[meta_fncer-1749254106119.csv]</parent-name>
+            <remote-alias>fecha_estimada_fpo</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>energia_kwhdia</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[energia_kwhdia]</local-name>
+            <parent-name>[meta_fncer-1749254106119.csv]</parent-name>
+            <remote-alias>energia_kwhdia</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>usuarios</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[usuarios]</local-name>
+            <parent-name>[meta_fncer-1749254106119.csv]</parent-name>
+            <remote-alias>usuarios</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>inversion_estimada_cop</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[inversion_estimada_cop]</local-name>
+            <parent-name>[meta_fncer-1749254106119.csv]</parent-name>
+            <remote-alias>inversion_estimada_cop</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>empleos_estimados</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[empleos_estimados]</local-name>
+            <parent-name>[meta_fncer-1749254106119.csv]</parent-name>
+            <remote-alias>empleos_estimados</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>emisiones_co2_tonano</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[emisiones_co2_tonano]</local-name>
+            <parent-name>[meta_fncer-1749254106119.csv]</parent-name>
+            <remote-alias>emisiones_co2_tonano</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tipo_proyecto</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tipo_proyecto]</local-name>
+            <parent-name>[meta_fncer-1749254106119.csv]</parent-name>
+            <remote-alias>tipo_proyecto</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>municipio</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[municipio]</local-name>
+            <parent-name>[meta_fncer-1749254106119.csv]</parent-name>
+            <remote-alias>municipio</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>codigo_municipio</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[codigo_municipio]</local-name>
+            <parent-name>[meta_fncer-1749254106119.csv]</parent-name>
+            <remote-alias>codigo_municipio</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>departamento</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[departamento]</local-name>
+            <parent-name>[meta_fncer-1749254106119.csv]</parent-name>
+            <remote-alias>departamento</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>codigo_departamento</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[codigo_departamento]</local-name>
+            <parent-name>[meta_fncer-1749254106119.csv]</parent-name>
+            <remote-alias>codigo_departamento</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shapeName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[shapeName]</local-name>
+            <parent-name>[Colombia.geojson]</parent-name>
+            <remote-alias>shapeName</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shapeISO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[shapeISO]</local-name>
+            <parent-name>[Colombia.geojson]</parent-name>
+            <remote-alias>shapeISO</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shapeID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[shapeID]</local-name>
+            <parent-name>[Colombia.geojson]</parent-name>
+            <remote-alias>shapeID</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shapeGroup</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[shapeGroup]</local-name>
+            <parent-name>[Colombia.geojson]</parent-name>
+            <remote-alias>shapeGroup</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shapeType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[shapeType]</local-name>
+            <parent-name>[Colombia.geojson]</parent-name>
+            <remote-alias>shapeType</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geometry</remote-name>
+            <remote-type>8</remote-type>
+            <local-name>[Geometry]</local-name>
+            <parent-name>[Colombia.geojson]</parent-name>
+            <remote-alias>Geometry</remote-alias>
+            <ordinal>19</ordinal>
+            <caption>Geometría</caption>
+            <local-type>spatial</local-type>
+            <aggregation>Collect</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Geometría' datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+      <column caption='meta_fncer-1749254106119.csv' datatype='table' name='[__tableau_internal_object_id__].[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]' role='measure' type='quantitative' />
+      <column caption='Capacidad' datatype='real' datatype-customized='true' default-format='n#,##0.00&quot;MW&quot;;-#,##0.00&quot;MW&quot;' name='[capacidad]' role='dimension' type='ordinal' />
+      <column caption='Codigo Departamento' datatype='integer' name='[codigo_departamento]' role='dimension' type='ordinal' />
+      <column caption='Codigo Municipio' datatype='integer' name='[codigo_municipio]' role='dimension' type='ordinal' />
+      <column caption='Departamento' datatype='string' name='[departamento]' role='dimension' type='nominal' />
+      <column caption='Emisiones Co2 Tonano' datatype='string' name='[emisiones_co2_tonano]' role='dimension' type='nominal' />
+      <column caption='Empleos Estimados' datatype='integer' name='[empleos_estimados]' role='measure' type='quantitative' />
+      <column caption='Energia Kwhdia' datatype='real' datatype-customized='true' default-format='n#,##0.00&quot;Kw/día&quot;;-#,##0.00&quot;Kw/día&quot;' name='[energia_kwhdia]' role='dimension' type='ordinal' />
+      <column caption='Fecha Estimada Fpo' datatype='date' name='[fecha_estimada_fpo]' role='dimension' type='ordinal' />
+      <column caption='Inversion Estimada Cop' datatype='integer' name='[inversion_estimada_cop]' role='measure' type='quantitative' />
+      <column caption='Municipio' datatype='string' name='[municipio]' role='dimension' type='nominal' />
+      <column caption='Proyecto' datatype='string' name='[proyecto]' role='dimension' type='nominal' />
+      <column caption='Proyecto Id' datatype='integer' name='[proyecto_id]' role='dimension' type='ordinal' />
+      <column caption='Shape Group' datatype='string' name='[shapeGroup]' role='dimension' type='nominal' />
+      <column caption='Shape ID' datatype='string' name='[shapeID]' role='dimension' type='nominal' />
+      <column caption='Shape ISO' datatype='string' name='[shapeISO]' role='dimension' type='nominal' />
+      <column caption='Shape Name' datatype='string' name='[shapeName]' role='dimension' type='nominal' />
+      <column caption='Shape Type' datatype='string' name='[shapeType]' role='dimension' type='nominal' />
+      <column caption='Tipo Proyecto' datatype='string' name='[tipo_proyecto]' role='dimension' type='nominal' />
+      <column caption='Usuarios' datatype='integer' name='[usuarios]' role='measure' type='quantitative' />
+      <column-instance column='[capacidad]' derivation='None' name='[none:capacidad:ok]' pivot='key' type='ordinal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='C:/Users/Asus/AppData/Local/Temp/TableauTemp/#TableauTemp_13vjn8f09x5b2s13mumd51qmu80e.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/09/2025 06:21:27 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>proyecto_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[proyecto_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>proyecto_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>meta_fncer-1749254106119.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>156</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>proyecto</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[proyecto]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>proyecto</remote-alias>
+              <ordinal>1</ordinal>
+              <family>meta_fncer-1749254106119.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>156</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>capacidad</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[capacidad]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>capacidad</remote-alias>
+              <ordinal>2</ordinal>
+              <family>meta_fncer-1749254106119.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>104</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fecha_estimada_fpo</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[fecha_estimada_fpo]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fecha_estimada_fpo</remote-alias>
+              <ordinal>3</ordinal>
+              <family>meta_fncer-1749254106119.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>70</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>energia_kwhdia</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[energia_kwhdia]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>energia_kwhdia</remote-alias>
+              <ordinal>4</ordinal>
+              <family>meta_fncer-1749254106119.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>106</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>usuarios</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[usuarios]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>usuarios</remote-alias>
+              <ordinal>5</ordinal>
+              <family>meta_fncer-1749254106119.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>106</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>inversion_estimada_cop</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[inversion_estimada_cop]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>inversion_estimada_cop</remote-alias>
+              <ordinal>6</ordinal>
+              <family>meta_fncer-1749254106119.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>112</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>empleos_estimados</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[empleos_estimados]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>empleos_estimados</remote-alias>
+              <ordinal>7</ordinal>
+              <family>meta_fncer-1749254106119.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>75</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>emisiones_co2_tonano</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[emisiones_co2_tonano]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>emisiones_co2_tonano</remote-alias>
+              <ordinal>8</ordinal>
+              <family>meta_fncer-1749254106119.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>106</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tipo_proyecto</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tipo_proyecto]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tipo_proyecto</remote-alias>
+              <ordinal>9</ordinal>
+              <family>meta_fncer-1749254106119.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>municipio</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[municipio]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>municipio</remote-alias>
+              <ordinal>10</ordinal>
+              <family>meta_fncer-1749254106119.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>80</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>codigo_municipio</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[codigo_municipio]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>codigo_municipio</remote-alias>
+              <ordinal>11</ordinal>
+              <family>meta_fncer-1749254106119.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>81</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>departamento</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[departamento]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>departamento</remote-alias>
+              <ordinal>12</ordinal>
+              <family>meta_fncer-1749254106119.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>codigo_departamento</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[codigo_departamento]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>codigo_departamento</remote-alias>
+              <ordinal>13</ordinal>
+              <family>meta_fncer-1749254106119.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>shapeName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[shapeName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>shapeName</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Colombia.geojson</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>shapeISO</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[shapeISO]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>shapeISO</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Colombia.geojson</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>shapeID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[shapeID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>shapeID</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Colombia.geojson</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>shapeGroup</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[shapeGroup]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>shapeGroup</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Colombia.geojson</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>shapeType</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[shapeType]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>shapeType</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Colombia.geojson</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Geometry</remote-name>
+              <remote-type>128</remote-type>
+              <local-name>[Geometry]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Geometry</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Colombia.geojson</family>
+              <local-type>spatial</local-type>
+              <aggregation>Collect</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:capacidad:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>0.15000000596046448</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>1.7400000095367432</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>6.0</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>170.0</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>195.02999877929688</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>1.0</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>4.0</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>9.8999996185302734</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>12.100000381469727</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>83.0</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>1.2999999523162842</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>5.059999942779541</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>17.909999847412109</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>75.0</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>99.5</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>0.23000000417232513</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>2.2000000476837158</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>8.0600004196166992</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>26.0</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>270.0</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>0.17000000178813934</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>1.7999999523162842</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>6.0999999046325684</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>21.0</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>197.77000427246094</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>1.3200000524520874</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>5.5</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>19.090000152587891</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>80.0</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>99.900001525878906</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>0.090000003576278687</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>0.87000000476837158</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>3.690000057220459</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>10.020000457763672</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>67.0</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>1.1299999952316284</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>4.1500000953674316</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>12.0</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>13.300000190734863</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>87.0</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>0.059999998658895493</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>0.60000002384185791</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>3.0</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>9.8299999237060547</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>59.700000762939453</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>1.3999999761581421</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>5.940000057220459</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>19.299999237060547</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>98.849998474121094</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>100.0</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>0.0099999997764825821</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>0.25</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>2.25</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>8.380000114440918</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>35.0</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>0.029999999329447746</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>0.30000001192092896</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>2.3499999046325684</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>8.6000003814697266</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>45.0</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>0.079999998211860657</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>0.61000001430511475</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>3.5</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>20.0</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>61.0</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>0.10000000149011612</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>0.93999999761581421</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>3.9600000381469727</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>10.279999732971191</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>200.0</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>0.20000000298023224</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>1.8500000238418579</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>6.5399999618530273</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>21.889999389648438</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>212.0</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>700.0</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>0.10999999940395355</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>1.5</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>5.9699997901916504</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>160.0</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>176.30000305175781</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>1.2000000476837158</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>4.2199997901916504</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>13.930000305175781</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>18.420000076293945</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>90.0</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>0.039999999105930328</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>0.55000001192092896</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>2.3900001049041748</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>9.8000001907348633</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>50.0</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>0.20999999344348907</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>1.8999999761581421</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>6.929999828338623</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>23.920000076293945</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>250.0</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>1.2599999904632568</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>4.5399999618530273</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>17.899999618530273</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>19.899999618530273</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>99.0</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Colombia&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='meta_fncer-1749254106119.csv' id='meta_fncer-1749254106119.csv_563CB68565DB4E42827F49CA646FB9DE'>
+            <properties context=''>
+              <relation join='left' type='join'>
+                <clause type='join'>
+                  <expression op='='>
+                    <expression op='[meta_fncer-1749254106119.csv].[departamento]' />
+                    <expression op='[Colombia.geojson].[shapeName]' />
+                  </expression>
+                </clause>
+                <relation connection='textscan.1qlurq21pd2t661dliq0a0uhmrrg' name='meta_fncer-1749254106119.csv' table='[meta_fncer-1749254106119#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='es_CO'>
+                    <column datatype='integer' name='proyecto_id' ordinal='0' />
+                    <column datatype='string' name='proyecto' ordinal='1' />
+                    <column datatype='string' name='capacidad' ordinal='2' />
+                    <column datatype='date' name='fecha_estimada_fpo' ordinal='3' />
+                    <column datatype='string' name='energia_kwhdia' ordinal='4' />
+                    <column datatype='integer' name='usuarios' ordinal='5' />
+                    <column datatype='integer' name='inversion_estimada_cop' ordinal='6' />
+                    <column datatype='integer' name='empleos_estimados' ordinal='7' />
+                    <column datatype='string' name='emisiones_co2_tonano' ordinal='8' />
+                    <column datatype='string' name='tipo_proyecto' ordinal='9' />
+                    <column datatype='string' name='municipio' ordinal='10' />
+                    <column datatype='integer' name='codigo_municipio' ordinal='11' />
+                    <column datatype='string' name='departamento' ordinal='12' />
+                    <column datatype='integer' name='codigo_departamento' ordinal='13' />
+                  </columns>
+                </relation>
+                <relation connection='ogrdirect.08fk6qy1d5t69v1f28tdf0m2lanq' name='Colombia.geojson' table='[Colombia.geojson]' type='table'>
+                  <columns>
+                    <column datatype='string' name='shapeName' ordinal='0' />
+                    <column datatype='string' name='shapeISO' ordinal='1' />
+                    <column datatype='string' name='shapeID' ordinal='2' />
+                    <column datatype='string' name='shapeGroup' ordinal='3' />
+                    <column datatype='string' name='shapeType' ordinal='4' />
+                    <column datatype='spatial' name='Geometry' ordinal='5' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Resaltado 1 (generado)' name='[Action1_14502C59909D4E3AAF946D84BEF0A224]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Capacidad instalada en Colombia' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Departamento' />
+        <param name='target' value='Capacidad instalada en Colombia' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Capacidad instalada en Colombia'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;</run>
+            <run bold='true' fontalignment='1'>Sheet Name</run>
+            <run bold='true' fontalignment='1'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='meta_fncer-1749254106119.csv+ (Varias conexiones)' name='federated.1t7d4ix16ergbs1d1pi8l0kz1n44' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1t7d4ix16ergbs1d1pi8l0kz1n44'>
+            <column caption='Geometría' datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+            <column caption='Capacidad' datatype='real' datatype-customized='true' default-format='n#,##0.00&quot;MW&quot;;-#,##0.00&quot;MW&quot;' name='[capacidad]' role='dimension' type='ordinal' />
+            <column-instance column='[Geometry]' derivation='Collect' name='[clct:Geometry:nk]' pivot='key' type='nominal' />
+            <column caption='Departamento' datatype='string' name='[departamento]' role='dimension' type='nominal' />
+            <column-instance column='[capacidad]' derivation='None' name='[none:capacidad:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[departamento]' derivation='None' name='[none:departamento:nk]' pivot='key' type='nominal' />
+            <column-instance column='[capacidad]' derivation='Sum' name='[sum:capacidad:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[none:capacidad:ok]'>
+            <groupfilter function='level-members' level='[none:capacidad:ok]' />
+          </filter>
+          <slices>
+            <column>[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[none:capacidad:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[Longitude (generated)]' field-type='quantitative' max='-6476268.9608500022' min='-10085924.003277341' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[Latitude (generated)]' field-type='quantitative' max='1447740.1393233377' min='-651184.5270021928' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:capacidad:qk]' palette='green_blue_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='alternate-text' field='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:capacidad:qk]' value='MW' />
+            <format attr='display-alternate-text' field='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:capacidad:qk]' value='true' />
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:capacidad:qk]' />
+              <text column='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[none:departamento:nk]' />
+              <text column='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:capacidad:qk]' />
+              <lod column='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[clct:Geometry:nk]' />
+              <geometry column='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[clct:Geometry:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.0099999997764825821' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[Latitude (generated)]</rows>
+        <cols>[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{CDEA78F7-B896-4684-ABD9-B0D0DE805FF5}' />
+    </worksheet>
+    <worksheet name='Capacidad total por tipo'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;</run>
+            <run bold='true' fontalignment='1'>Sheet Name</run>
+            <run bold='true' fontalignment='1'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='meta_fncer-1749254106119.csv+ (Varias conexiones)' name='federated.1t7d4ix16ergbs1d1pi8l0kz1n44' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t7d4ix16ergbs1d1pi8l0kz1n44'>
+            <column caption='Capacidad' datatype='real' datatype-customized='true' default-format='n#,##0.00&quot;MW&quot;;-#,##0.00&quot;MW&quot;' name='[capacidad]' role='dimension' type='ordinal' />
+            <column-instance column='[capacidad]' derivation='None' name='[none:capacidad:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[tipo_proyecto]' derivation='None' name='[none:tipo_proyecto:nk]' pivot='key' type='nominal' />
+            <column-instance column='[capacidad]' derivation='Sum' name='[sum:capacidad:qk]' pivot='key' type='quantitative' />
+            <column caption='Tipo Proyecto' datatype='string' name='[tipo_proyecto]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[none:capacidad:ok]'>
+            <groupfilter function='level-members' level='[none:capacidad:ok]' />
+          </filter>
+          <filter class='quantitative' column='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:capacidad:qk]' included-values='in-range'>
+            <min>1615.1700038909912</min>
+            <max>4348.5299897901714</max>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[none:tipo_proyecto:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:capacidad:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[none:capacidad:ok]</column>
+            <column>[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:capacidad:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:capacidad:qk]' palette='tableau-map-temperatur' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='cols' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:capacidad:qk]' value='false' />
+            <format attr='break-on-special' field='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:capacidad:qk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:capacidad:qk]' value='false' />
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='background-color' value='#d4d4d4' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='in-tooltip' field='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:capacidad:qk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:capacidad:qk]' />
+              <text column='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:capacidad:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9890055656433105' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[none:tipo_proyecto:nk]</rows>
+        <cols>[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:capacidad:qk]</cols>
+      </table>
+      <simple-id uuid='{6204272F-8EB7-471A-A567-FD17F1D5CD00}' />
+    </worksheet>
+    <worksheet name='Energía producida por tipo de FNCER (kWh/día)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='14'>&lt;</run>
+            <run bold='true' fontalignment='1' fontsize='14'>Sheet Name</run>
+            <run bold='true' fontalignment='1' fontsize='14'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='meta_fncer-1749254106119.csv+ (Varias conexiones)' name='federated.1t7d4ix16ergbs1d1pi8l0kz1n44' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t7d4ix16ergbs1d1pi8l0kz1n44'>
+            <column-instance column='[energia_kwhdia]' derivation='Avg' name='[avg:energia_kwhdia:qk]' pivot='key' type='quantitative' />
+            <column caption='Energia Kwhdia' datatype='real' datatype-customized='true' default-format='n#,##0.00&quot;Kw/día&quot;;-#,##0.00&quot;Kw/día&quot;' name='[energia_kwhdia]' role='dimension' type='ordinal' />
+            <column-instance column='[tipo_proyecto]' derivation='None' name='[none:tipo_proyecto:nk]' pivot='key' type='nominal' />
+            <column caption='Tipo Proyecto' datatype='string' name='[tipo_proyecto]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[avg:energia_kwhdia:qk]' palette='orange_blue_white_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[avg:energia_kwhdia:qk]' />
+              <text column='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[avg:energia_kwhdia:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[avg:energia_kwhdia:qk]</rows>
+        <cols>[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[none:tipo_proyecto:nk]</cols>
+      </table>
+      <simple-id uuid='{C1066AF3-F51C-44FE-9AEC-20CED77821EA}' />
+    </worksheet>
+    <worksheet name='Evolución de la capacidad instalada Eólica'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;</run>
+            <run bold='true' fontalignment='1'>Sheet Name</run>
+            <run bold='true' fontalignment='1'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='meta_fncer-1749254106119.csv+ (Varias conexiones)' name='federated.1t7d4ix16ergbs1d1pi8l0kz1n44' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1t7d4ix16ergbs1d1pi8l0kz1n44'>
+            <column caption='Capacidad' datatype='real' datatype-customized='true' default-format='n#,##0.00&quot;MW&quot;;-#,##0.00&quot;MW&quot;' name='[capacidad]' role='dimension' type='ordinal' />
+            <column caption='Fecha Estimada Fpo' datatype='date' name='[fecha_estimada_fpo]' role='dimension' type='ordinal' />
+            <column-instance column='[tipo_proyecto]' derivation='None' name='[none:tipo_proyecto:nk]' pivot='key' type='nominal' />
+            <column-instance column='[capacidad]' derivation='Sum' name='[sum:capacidad:qk]' pivot='key' type='quantitative' />
+            <column caption='Tipo Proyecto' datatype='string' name='[tipo_proyecto]' role='dimension' type='nominal' />
+            <column-instance column='[fecha_estimada_fpo]' derivation='Year' name='[yr:fecha_estimada_fpo:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[none:tipo_proyecto:nk]'>
+            <groupfilter function='member' level='[none:tipo_proyecto:nk]' member='&quot;Eólico&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[yr:fecha_estimada_fpo:ok]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[yr:fecha_estimada_fpo:ok]' />
+              <groupfilter function='member' level='[yr:fecha_estimada_fpo:ok]' member='2999' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[yr:fecha_estimada_fpo:ok]</column>
+            <column>[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[none:tipo_proyecto:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:capacidad:qk]' palette='brown_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:capacidad:qk]' />
+              <text column='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:capacidad:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.813093900680542' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:capacidad:qk]</rows>
+        <cols>[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[yr:fecha_estimada_fpo:ok]</cols>
+      </table>
+      <simple-id uuid='{5C21FF29-DFFF-4D4F-9F72-FF53D19685E5}' />
+    </worksheet>
+    <worksheet name='Evolución de la capacidad instalada Solar'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;</run>
+            <run bold='true' fontalignment='1'>Sheet Name</run>
+            <run bold='true' fontalignment='1'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='meta_fncer-1749254106119.csv+ (Varias conexiones)' name='federated.1t7d4ix16ergbs1d1pi8l0kz1n44' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t7d4ix16ergbs1d1pi8l0kz1n44'>
+            <column caption='Capacidad' datatype='real' datatype-customized='true' default-format='n#,##0.00&quot;MW&quot;;-#,##0.00&quot;MW&quot;' name='[capacidad]' role='dimension' type='ordinal' />
+            <column caption='Fecha Estimada Fpo' datatype='date' name='[fecha_estimada_fpo]' role='dimension' type='ordinal' />
+            <column-instance column='[tipo_proyecto]' derivation='None' name='[none:tipo_proyecto:nk]' pivot='key' type='nominal' />
+            <column-instance column='[capacidad]' derivation='Sum' name='[sum:capacidad:qk]' pivot='key' type='quantitative' />
+            <column caption='Tipo Proyecto' datatype='string' name='[tipo_proyecto]' role='dimension' type='nominal' />
+            <column-instance column='[fecha_estimada_fpo]' derivation='Year' name='[yr:fecha_estimada_fpo:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[none:tipo_proyecto:nk]'>
+            <groupfilter function='member' level='[none:tipo_proyecto:nk]' member='&quot;Solar&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[yr:fecha_estimada_fpo:ok]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[yr:fecha_estimada_fpo:ok]' />
+              <groupfilter function='member' level='[yr:fecha_estimada_fpo:ok]' member='2999' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[yr:fecha_estimada_fpo:ok]</column>
+            <column>[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[none:tipo_proyecto:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:capacidad:qk]' palette='purple_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:capacidad:qk]' />
+              <text column='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:capacidad:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:capacidad:qk]</rows>
+        <cols>[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[yr:fecha_estimada_fpo:ok]</cols>
+      </table>
+      <simple-id uuid='{67B4BCE3-A10A-4C34-8345-2AACBC59E99B}' />
+    </worksheet>
+    <worksheet name='Usuarios benficiados por depatamento'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;</run>
+            <run bold='true' fontalignment='1'>Sheet Name</run>
+            <run bold='true' fontalignment='1'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='meta_fncer-1749254106119.csv+ (Varias conexiones)' name='federated.1t7d4ix16ergbs1d1pi8l0kz1n44' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t7d4ix16ergbs1d1pi8l0kz1n44'>
+            <column caption='Departamento' datatype='string' name='[departamento]' role='dimension' type='nominal' />
+            <column-instance column='[departamento]' derivation='None' name='[none:departamento:nk]' pivot='key' type='nominal' />
+            <column-instance column='[usuarios]' derivation='Sum' name='[sum:usuarios:qk]' pivot='key' type='quantitative' />
+            <column caption='Usuarios' datatype='integer' name='[usuarios]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[none:departamento:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:departamento:nk]' />
+              <groupfilter function='member' level='[none:departamento:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[none:departamento:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:usuarios:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[none:departamento:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[none:departamento:nk]' value='164' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:usuarios:qk]' palette='green_blue_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='cols' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:usuarios:qk]' value='false' />
+            <format attr='break-on-special' field='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:usuarios:qk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:usuarios:qk]' value='false' />
+            <format attr='background-color' value='#e6e6e6' />
+            <format attr='band-size' scope='cols' value='1' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:usuarios:qk]' />
+              <text column='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:usuarios:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.076464056968689' />
+                <format attr='mark-labels-cull' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[none:departamento:nk]</rows>
+        <cols>[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:usuarios:qk]</cols>
+      </table>
+      <simple-id uuid='{06D68375-B7B4-435C-A26E-81E4E8B7D8AB}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='dashboard_fncer_colombia'>
+      <style />
+      <size maxheight='860' maxwidth='1200' minheight='800' minwidth='1200' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98140' id='18' param='horz' type-v2='layout-flow' w='98666' x='667' y='930'>
+            <zone h='98140' id='5' type-v2='layout-basic' w='98666' x='667' y='930'>
+              <zone h='49072' id='3' name='Capacidad instalada en Colombia' w='66000' x='667' y='49998'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24532' id='8' name='Capacidad total por tipo' w='42166' x='667' y='930'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49068' id='12' name='Usuarios benficiados por depatamento' w='56500' x='42833' y='930'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24536' id='13' name='Energía producida por tipo de FNCER (kWh/día)' w='42166' x='667' y='25462'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24537' id='16' name='Evolución de la capacidad instalada Eólica' w='32666' x='66667' y='49998'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24535' id='20' name='Evolución de la capacidad instalada Solar' w='32666' x='66667' y='74535'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout active='true' name='Desktop'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1'>&lt;</run>
+                <run bold='true' fontalignment='1'>Sheet Name</run>
+                <run bold='true' fontalignment='1'>&gt;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <zones>
+            <zone h='100000' id='24' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98140' id='35' param='vert' type-v2='layout-flow' w='98666' x='667' y='930'>
+                <zone h='5697' id='36' type-v2='title' w='98666' x='667' y='930'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='92443' id='25' param='vert' type-v2='layout-flow' w='98666' x='667' y='6627'>
+                  <zone h='92443' id='26' type-v2='layout-basic' w='98666' x='667' y='6627'>
+                    <zone h='46221' id='3' name='Capacidad instalada en Colombia' w='49333' x='667' y='6627'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='37558' id='12' name='Usuarios benficiados por depatamento' w='49333' x='50000' y='6627'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='54885' id='29' param='vert' type-v2='layout-flow' w='49333' x='50000' y='44185'>
+                      <zone fixed-size='173' h='21046' id='8' is-fixed='true' name='Capacidad total por tipo' w='49333' x='50000' y='44185'>
+                        <layout-cache minwidth='180' type-h='fixed' type-w='scalable' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='33839' id='13' name='Energía producida por tipo de FNCER (kWh/día)' w='49333' x='50000' y='65231'>
+                        <layout-cache minheight='192' type-h='scalable' type-w='fixed' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                    <zone h='46222' id='31' param='vert' type-v2='layout-flow' w='49333' x='667' y='52848'>
+                      <zone h='23111' id='16' name='Evolución de la capacidad instalada Eólica' w='49333' x='667' y='52848'>
+                        <layout-cache cell-count-w='5' minheight='195' non-cell-size-w='133' type-h='scalable' type-w='cell' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='23111' id='20' name='Evolución de la capacidad instalada Solar' w='49333' x='667' y='75959'>
+                        <layout-cache cell-count-w='7' minheight='195' non-cell-size-w='133' type-h='scalable' type-w='cell' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1450' minheight='1450' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='33' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='32' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='203' h='24532' id='8' is-fixed='true' name='Capacidad total por tipo' w='42166' x='667' y='930'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49068' id='12' is-fixed='true' name='Usuarios benficiados por depatamento' w='56500' x='42833' y='930'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='203' h='24536' id='13' is-fixed='true' name='Energía producida por tipo de FNCER (kWh/día)' w='42166' x='667' y='25462'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49072' id='3' is-fixed='true' name='Capacidad instalada en Colombia' w='66000' x='667' y='49998'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='203' h='24537' id='16' is-fixed='true' name='Evolución de la capacidad instalada Eólica' w='32666' x='66667' y='49998'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='203' h='24535' id='20' is-fixed='true' name='Evolución de la capacidad instalada Solar' w='32666' x='66667' y='74535'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{67839EF4-311B-4F2D-A98F-1EB16924688E}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Capacidad total por tipo'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{4D18942C-BBE1-4066-A2CA-5F023DBA2388}' />
+    </window>
+    <window class='worksheet' name='Usuarios benficiados por depatamento'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='173'>
+            <card pane-specification-id='0' param='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:usuarios:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AD38778A-9D72-437E-927E-9A97FE110545}' />
+    </window>
+    <window class='worksheet' name='Capacidad instalada en Colombia'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='16' />
+        <default-map-unit-selection mapunit='1' />
+      </viewpoint>
+      <simple-id uuid='{968F7CF2-FEF7-40CE-830B-0858B1DACD82}' />
+    </window>
+    <window class='worksheet' name='Evolución de la capacidad instalada Eólica'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='173'>
+            <card pane-specification-id='0' param='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:capacidad:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7B0DF1CD-E25E-4A81-BA93-5357D3CD7FA9}' />
+    </window>
+    <window class='worksheet' name='Evolución de la capacidad instalada Solar'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='173'>
+            <card pane-specification-id='0' param='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[sum:capacidad:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3909576F-DC60-4515-AD60-366A9B3F98A5}' />
+    </window>
+    <window class='worksheet' name='Energía producida por tipo de FNCER (kWh/día)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='173'>
+            <card pane-specification-id='0' param='[federated.1t7d4ix16ergbs1d1pi8l0kz1n44].[avg:energia_kwhdia:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{1A6696B8-84E1-4C8D-BF9C-308C9CAE86E3}' />
+    </window>
+    <window class='dashboard' maximized='true' name='dashboard_fncer_colombia'>
+      <viewpoints>
+        <viewpoint name='Capacidad instalada en Colombia'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='16' />
+        </viewpoint>
+        <viewpoint name='Capacidad total por tipo' />
+        <viewpoint name='Energía producida por tipo de FNCER (kWh/día)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Evolución de la capacidad instalada Eólica'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Evolución de la capacidad instalada Solar'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Usuarios benficiados por depatamento' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{82C88F5B-182D-4F32-969C-61DF6F98996A}' />
+    </window>
+  </windows>
+</workbook>
