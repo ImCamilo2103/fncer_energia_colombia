@@ -12,7 +12,7 @@ from sqlalchemy import create_engine
 ## 🔌 Conexión a PostgreSQL
 Me conecto a los modulos de PostgreSQLesto con el fin de trabajar desde la base de datos que esta alli
 ```Python
-engine = create_engine('postgresql://postgres:Mom1012%@localhost:5432/proyectos')
+engine = create_engine('postgresql://postgres:''@localhost:5432/¿')
 ```
 
 ## ✅ Pregunta 1: Capacidad total y promedio

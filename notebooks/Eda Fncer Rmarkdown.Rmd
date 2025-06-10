@@ -2,7 +2,9 @@
 title: "Análisis Exploratorio de FNCER en R"
 author: "Camilo Garzon Moreno"
 date: "`r Sys.Date()`"
-output: html_document
+output:
+  html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -17,11 +19,11 @@ library(scales)
 
 ```{r}
 con <- dbConnect(RPostgreSQL::PostgreSQL(),
-                 dbname ="proyectos",
+                 dbname ="¡?",
                  host = "localhost",
                  port = 5432,
                  user = "postgres",
-                 password = "Mom1012%")
+                 password = "?¡")
 ```
 
 ## Capacidad Instalada Total y Promedio
