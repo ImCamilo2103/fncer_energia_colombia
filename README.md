@@ -49,7 +49,7 @@ fncer_energia_colombia/
 
 ## 📎 Recursos Clave
 - 🔗 [Dataset Original en Datos.gov](https://www.datos.gov.co/resource/vy9n-w6hc.json)
-- 🧠 [Dashboard interactivo en Tableau (próximamente)](https://public.tableau.com/app/profile/tu_usuario)
+- 🧠 [Dashboard interactivo en Tableau](https://public.tableau.com/app/profile/camilo.garzon.moreno/viz/AnlisisFNCER-EnergasRenovablesenColombia/dashboard_fncer_colombia?publish=yes)
 - 📂 [Repositorio GitHub](https://github.com/ImCamilo2103/fncer_energia_colombia)
 
 ## 🧾 Documentos Adicionales
@@ -59,7 +59,7 @@ fncer_energia_colombia/
 - [🗺️ GeoJSON de Colombia](documentos/co.geojson)
 
 ## 📷 Captura del Dashboard
-![Dashboard FNCER](informes/dashboard_fncer.png)
+![Dashboard FNCER](visualizaciones/dashboard_fncer.jpg)
 
 ## 🙋 Autor
 **Camilo Garzon M.** — Ingeniero Mecánico con experiencia en manufactura, proyectos industriales, apasionado por los datos, la energía y la analítica.
